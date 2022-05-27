@@ -2,15 +2,15 @@ name: CIformatterr
 
 on:
   push:
-    branches: master 
+    branches: main
   pull_request: 
-    branches: master
+    branches: main
   
 jobs:
   build_all:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@main
       - name: build_formatter
         run: |
           cd formatter_lib
